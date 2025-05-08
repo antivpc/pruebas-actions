@@ -21,6 +21,7 @@ jobs:
 
   other:
     runs-on: ubuntu-latest
+    needs: saludo
 
     steps:
     - name: Listado
