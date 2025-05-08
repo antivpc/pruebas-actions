@@ -9,6 +9,15 @@ jobs:
     steps:
     - name: Saludo
       run: echo "Hola, mundo!"
+    
+    - name: Crear archivo
+      run: touch hola.txt
+
+    - name: Agregar texto
+      run: echo "Hola, mundo!" >> hola.txt
+
+    - name: Leer archivo
+      run: cat hola.txt
 
   other:
     runs-on: ubuntu-latest
